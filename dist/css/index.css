@@ -143,3 +143,21 @@ li{
 #footer>span{
     padding: 0 20px;
 }
+
+h3{
+    font-weight: 200px;
+    color:#333;
+    font-size: 1em;
+}
+
+#showcase_container{
+    margin-top:-15%;
+}
+
+
+#itemwp{
+   width:40%;
+   box-sizing: border-box;
+   margin-left:55%;
+   z-index: 0;
+}
