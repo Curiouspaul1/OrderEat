@@ -11,25 +11,38 @@ body{
 }
 
 a{
-    text-decoration: none;
     color:white;
     font-size: 14px;
     font-weight: 200;
+    text-decoration: none;
+    animation-name:border_underline;
+    animation-duration:2s;
+    animation-play-state: paused;
 }
+
+a:hover{
+    font-weight: 300;
+    animation-play-state: running;
+}
+
+
+@keyframes border_underline{
+        0%{border-bottom: 1px solid white; border-width:0%;}
+        25%{border-bottom: 1px solid white; border-width:25%;}
+        50%{border-bottom: 1px solid white; border-width:50%;}
+        100%{border-bottom: 1px solid white; border-width:100%;}
+    }
 
 p{
     margin: 0;
 }
 
-a:hover{
-    color:black;
-    transition: 0.2s;
-    font-weight: 300;
+.navbar>li{
+    list-style-type: none !important;
 }
 
-
 li{
-    list-style-type: none;
+    list-style-type: none !important;
     display: inline;
     padding: 0 2px;
 }
@@ -116,5 +129,17 @@ li{
 
 #googleplay_btn:hover{
     opacity: 0.5;
-    transform: 
+}
+
+#footer{
+    background:#333;
+    width:100% !important;
+    padding:20px;
+    color:white;
+    font-weight: 200;
+    text-align:center;
+}
+
+#footer>span{
+    padding: 0 20px;
 }
