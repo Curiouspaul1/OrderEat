@@ -134,10 +134,15 @@ li{
 #footer{
     background:#333;
     width:100% !important;
-    padding:20px;
+    padding:10px;
     color:white;
     font-weight: 200;
     text-align:center;
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    margin-bottom: 0px;
 }
 
 #footer>span{
@@ -159,5 +164,6 @@ h3{
    width:40%;
    box-sizing: border-box;
    margin-left:55%;
+   margin-top:-40%;
    z-index: 0;
 }
